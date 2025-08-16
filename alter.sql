@@ -5,3 +5,6 @@ ALTER TABLE person2
 
 ALTER TABLE person2 
     DROP COLUMN email;
+
+ALTER TABLE person2
+    RENAME COLUMN age to user_age;
