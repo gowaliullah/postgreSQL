@@ -11,3 +11,7 @@ ALTER TABLE person2
 
 ALTER TABLE person2
     ALTER COLUMN user_name TYPE VARCHAR(25);
+
+
+ALTER TABLE person2
+    ALTER COLUMN user_age set NOT NULL;
