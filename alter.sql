@@ -15,3 +15,8 @@ ALTER TABLE person2
 
 ALTER TABLE person2
     ALTER COLUMN user_age set NOT NULL;
+
+
+
+ALTER TABLE person2
+    ALTER COLUMN user_age drop NOT NULL;
