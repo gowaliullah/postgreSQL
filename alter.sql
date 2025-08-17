@@ -1,5 +1,7 @@
 SELECT * FROM person2;
 
+
+-- added column in existing table with default value and drop the column
 ALTER TABLE person2 
     ADD COLUMN email VARCHAR(25) DEFAULT 'defaulthabi@gmail.com' NOT NULL;
 
