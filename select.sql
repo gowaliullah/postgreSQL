@@ -48,3 +48,6 @@ SELECT * FROM students;
 
 -- get single column
 SELECT email FROM students;
+
+-- multiple single column
+SELECT email, first_name, country FROM students;
