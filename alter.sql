@@ -29,3 +29,20 @@ ALTER TABLE person2
 
 ALTER TABLE person2
     DROP constraint unique_person2_user_age UNIQUE(user_age);
+
+
+
+
+
+     -- delete table with structure
+    DROP TABLE person; 
+
+
+    -- delete only table data but keeps the structure
+    TRUNCATE TABLE person; 
+
+
+
+
+
+
