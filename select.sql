@@ -43,5 +43,5 @@ CREATE TABLE students (
 -- ('Chloe', 'Kim', 18, '12', 'Graphic Design', 'chloe.k@example.com', '2007-02-01', 'B+', 'South Korea'),
 -- ('David', 'Chen', 17, '11', 'Animation', 'david.c@example.com', '2008-11-20', 'O+', 'Taiwan');
 
-
+-- see everythings
 SELECT * FROM students;
