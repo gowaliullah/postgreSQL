@@ -6,6 +6,10 @@ ALTER TABLE person2
 ALTER TABLE person2 
     DROP COLUMN email;
 
+
+
+-- RENAME COLUMN age to user_age
+
 ALTER TABLE person2
     RENAME COLUMN age to user_age;
 
@@ -15,7 +19,6 @@ ALTER TABLE person2
 
 ALTER TABLE person2
     ALTER COLUMN user_age set NOT NULL;
-
 
 
 ALTER TABLE person2
