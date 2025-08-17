@@ -34,6 +34,7 @@ ALTER TABLE person2
 
 
 
+-- drop vs truncate
 
      -- delete table with structure
     DROP TABLE person; 
