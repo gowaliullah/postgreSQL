@@ -54,3 +54,9 @@ SELECT email, first_name, country FROM students;
 
 -- change the key_name
 SELECT email as student_email FROM students;
+
+
+
+
+-- sorting
+SELECT * FROM students ORDER BY first_name ASC;
