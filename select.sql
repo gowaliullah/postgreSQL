@@ -45,3 +45,6 @@ CREATE TABLE students (
 
 -- see everythings
 SELECT * FROM students;
+
+-- get single column
+SELECT email FROM students;
