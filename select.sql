@@ -51,3 +51,6 @@ SELECT email FROM students;
 
 -- multiple single column
 SELECT email, first_name, country FROM students;
+
+-- change the key_name
+SELECT email as student_email FROM students;
