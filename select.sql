@@ -105,3 +105,5 @@ SELECT sum(age) FROM students;
 
 -- check the row
 SELECT count(*) FROM students;
+
+SELECT max(length(first_name)) FROM students;
