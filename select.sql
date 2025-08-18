@@ -118,4 +118,9 @@ SELECT * from students
 
 
 
+-- NULL -> result will be always same = NULL
+
+SELECT * from students
+    WHERE email = NULL;
+    WHERE email != NULL;
 
