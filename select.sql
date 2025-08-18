@@ -77,4 +77,12 @@ SELECT * FROM students
 
 --  multiple search with OR condition  
 SELECT * FROM students 
-    WHERE country ='Australia' OR country = 'Egypt';
+    WHERE country ='Australia' OR country = 'UK';
+
+
+SELECT * FROM students 
+    WHERE (country ='Australia' OR country = 'UK') AND age =19;
+
+
+-- catipalize speciphic field
+SELECT upper(first_name), * FROM students;
