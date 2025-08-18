@@ -56,7 +56,8 @@ SELECT email, first_name, country FROM students;
 SELECT email as student_email FROM students;
 
 
-
-
 -- sorting
 SELECT * FROM students ORDER BY first_name ASC;
+
+-- only unique value
+SELECT DISTINCT country FROM students;
