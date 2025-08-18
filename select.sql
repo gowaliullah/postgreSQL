@@ -71,3 +71,10 @@ SELECT * FROM students
 -- search with multiple condition
 SELECT * FROM students 
     WHERE grade ='10' AND course = 'Biology';
+
+
+
+
+--  multiple search with OR condition  
+SELECT * FROM students 
+    WHERE country ='Australia' OR country = 'Egypt';
