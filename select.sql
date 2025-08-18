@@ -61,3 +61,9 @@ SELECT * FROM students ORDER BY first_name ASC;
 
 -- only unique value
 SELECT DISTINCT country FROM students;
+SELECT DISTINCT blood_group FROM students;
+
+
+-- filter based on location
+SELECT * FROM students 
+    WHERE country ='Australia';
