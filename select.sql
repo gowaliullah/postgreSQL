@@ -86,3 +86,6 @@ SELECT * FROM students
 
 -- catipalize speciphic field
 SELECT upper(first_name), * FROM students;
+
+-- concat
+SELECT concat(first_name, ' ', last_name), * FROM students;
