@@ -107,3 +107,15 @@ SELECT sum(age) FROM students;
 SELECT count(*) FROM students;
 
 SELECT max(length(first_name)) FROM students;
+
+
+SELECT * from students
+    WHERE NOT country = 'Thailand';
+
+
+SELECT * from students
+    WHERE country != 'Thailand';
+
+
+
+
