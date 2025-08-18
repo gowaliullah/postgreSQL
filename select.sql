@@ -124,3 +124,7 @@ SELECT * from students
     WHERE email = NULL;
     WHERE email != NULL;
 
+
+-- if check null value use IS
+SELECT * from students
+    WHERE email IS NULL;
