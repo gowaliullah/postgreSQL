@@ -64,6 +64,10 @@ SELECT DISTINCT country FROM students;
 SELECT DISTINCT blood_group FROM students;
 
 
--- filter based on location
 SELECT * FROM students 
     WHERE country ='Australia';
+
+
+-- search with multiple condition
+SELECT * FROM students 
+    WHERE grade ='10' AND course = 'Biology';
