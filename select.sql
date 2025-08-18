@@ -78,6 +78,17 @@ INSERT INTO players (first_name, last_name, age, grade, course, email, dob, bloo
 
 
 
+INSERT INTO players (first_name, last_name, grade, course, email, dob, blood_group, country) VALUES
+('Alice', 'Smith',  '12', 'Physics', 'alice.smith@example.com', '2007-03-15', 'A+', 'USA'),
+('Bob', 'Johnson', '11', 'Chemistry', 'bob.j@example.com', '2008-01-22', 'B-', 'Canada'),
+('Charlie', 'Brown', '12', 'Mathematics', '', '2006-11-05', 'O+', 'UK'),
+('Diana', 'Miller', '10', 'Biology', 'diana.m@example.com', '2009-07-30', 'AB-', 'Australia'),
+('Eve', 'Davis', '12', 'Computer Science', 'eve.d@example.com', '2007-09-10', 'A-', 'Germany'),
+('Frank', 'Garcia', '11', 'History', 'frank.g@example.com', '2008-04-18', 'O-', 'Spain'),
+('Grace', 'Rodriguez', '10', 'Literature', 'grace.r@example.com', '2009-02-28', 'B+', 'Mexico')
+
+
+
 -- see everythings
 SELECT * FROM students;
 
@@ -168,3 +179,7 @@ SELECT * from students
 
 
 SELECT COALESCE(NULL, NULL, 5)
+
+-- set default value of null
+SELECT COALESCE(email, 'email is not proived') FROM players;
+SELECT COALESCE(age, 00) FROM players;
