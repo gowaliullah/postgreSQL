@@ -218,3 +218,14 @@ SELECT * FROM students
 
 SELECT * FROM students
     WHERE first_name ILIKE 'e%';
+
+
+
+
+
+
+SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 2;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 3;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 4;
