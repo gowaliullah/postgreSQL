@@ -18,3 +18,8 @@ INSERT INTO departments VALUES(102, 'MK');
 
 SELECT * FROM employees;
 SELECT * FROM departments;
+
+
+-- cross join
+SELECT * FROM employees
+    CROSS JOIN departments;
