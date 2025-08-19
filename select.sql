@@ -189,7 +189,21 @@ SELECT COALESCE(age, 00) FROM players;
 SELECT * from students
     WHERE NOT country = 'Thailand' OR country = 'Thailand' OR country = 'Thailand';
 
-SELECT * from students
-    WHERE NOT country IN('Thailand', 'USA', 'UK');
-SELECT * from students
-    WHERE NOT country NOT IN('Thailand', 'USA', 'UK');
+
+
+
+
+    SELECT * from students
+        WHERE country IN('Thailand', 'USA', 'UK');
+
+
+    SELECT * from students
+        WHERE country NOT IN('Thailand', 'USA', 'UK');
+
+
+ SELECT * from students
+        WHERE age BETWEEN 19 AND 22;
+
+ SELECT * from students
+        WHERE dob BETWEEN '2006-06-01' AND '2006-11-01';
+
