@@ -8,8 +8,8 @@ CREATE TABLE post(
     title TEXT NOT NULL,
     -- user_id INTEGER REFERENCES "user"(id) 
     -- user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
-    -- user_id INTEGER REFERENCES "user"(id) ON DELETE SET NULL -- if set NOT NULL it's does not work 
-    user_id INTEGER REFERENCES "user"(id) ON DELETE set DEFAULT DEFAULT 2
+    user_id INTEGER REFERENCES "user"(id) ON DELETE SET NULL -- if set NOT NULL it's does not work 
+    -- user_id INTEGER REFERENCES "user"(id) ON DELETE set DEFAULT DEFAULT 2
     -- user_id INTEGER REFERENCES "user"(id) 
 )
 
@@ -40,7 +40,7 @@ SELECT * FROM "user";
 
 -- Restriction behabiour
 DELETE FROM "user"
-    WHERE id = 1;
+    WHERE id = 4;
 
 
 -- join with 2 tables
@@ -50,7 +50,6 @@ SELECT title, username FROM post -- only title & username
 
 SELECT * FROM post
     JOIN "user" ON post.user_id = "user".id
-
 
 
     SELECT post.id FROM post
@@ -66,3 +65,7 @@ SELECT * FROM post p
 -- left join
 SELECT * FROM post p
     LEFT JOIN "user" u ON p.user_id = u.id
+
+    -- right join
+SELECT * FROM post p
+    RIGHT JOIN "user" u ON p.user_id = u.id
