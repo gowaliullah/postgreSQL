@@ -33,3 +33,10 @@ SELECT * , age(CURRENT_DATE, dob) FROM students;
 
 
 SELECT extract(year from '2020-01-25'::date);
+SELECT extract(day from '2020-01-25'::date);
+SELECT extract(month from '2020-01-25'::date);
+
+SELECT '0'::BOOLEAN;
+SELECT '1'::BOOLEAN;
+SELECT 'y'::BOOLEAN;
+SELECT 'n'::BOOLEAN;
