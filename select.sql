@@ -180,6 +180,16 @@ SELECT * from students
 
 SELECT COALESCE(NULL, NULL, 5)
 
--- set default value of null
+--  
 SELECT COALESCE(email, 'email is not proived') FROM players;
 SELECT COALESCE(age, 00) FROM players;
+
+
+
+SELECT * from students
+    WHERE NOT country = 'Thailand' OR country = 'Thailand' OR country = 'Thailand';
+
+SELECT * from students
+    WHERE NOT country IN('Thailand', 'USA', 'UK');
+SELECT * from students
+    WHERE NOT country NOT IN('Thailand', 'USA', 'UK');
