@@ -7,8 +7,8 @@ CREATE TABLE post(
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
     -- user_id INTEGER REFERENCES "user"(id) 
-    user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
-    -- user_id INTEGER REFERENCES "user"(id) 
+    -- user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
+    user_id INTEGER REFERENCES "user"(id) ON DELETE SET NULL
     -- user_id INTEGER REFERENCES "user"(id) 
     -- user_id INTEGER REFERENCES "user"(id) 
 )
