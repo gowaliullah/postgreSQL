@@ -23,3 +23,8 @@ SELECT * FROM departments;
 -- cross join
 SELECT * FROM employees
     CROSS JOIN departments;
+
+
+-- natural join
+SELECT * FROM employees
+    NATURAL JOIN departments;
