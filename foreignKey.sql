@@ -44,5 +44,19 @@ DELETE FROM "user"
 
 
 -- join with 2 tables
-SELECT title, username FROM post
+SELECT title, username FROM post -- only title & username
     JOIN "user" ON post.user_id = "user".id
+
+
+SELECT * FROM post
+    JOIN "user" ON post.user_id = "user".id
+
+
+
+    SELECT post.id FROM post
+    JOIN "user" ON post.user_id = "user".id
+
+
+-- as alias
+SELECT * FROM post p
+    JOIN "user" u ON p.user_id = u.id
