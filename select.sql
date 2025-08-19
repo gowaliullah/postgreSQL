@@ -229,3 +229,8 @@ SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
 SELECT * FROM students LIMIT 5 OFFSET 5 * 2;
 SELECT * FROM students LIMIT 5 OFFSET 5 * 3;
 SELECT * FROM students LIMIT 5 OFFSET 5 * 4;
+
+
+-- delete --> uporer sob condition apply kora jabe delete ar upo
+DELETE * FROM students;
+DELETE FROM students WHERE grade = 'B';
