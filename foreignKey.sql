@@ -60,3 +60,9 @@ SELECT * FROM post
 -- as alias
 SELECT * FROM post p
     JOIN "user" u ON p.user_id = u.id
+
+
+
+-- left join
+SELECT * FROM post p
+    LEFT JOIN "user" u ON p.user_id = u.id
