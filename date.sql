@@ -25,3 +25,8 @@ SELECT to_char(now(), 'DDD');
 SELECT CURRENT_DATE - INTERVAL '1 year';
 SELECT CURRENT_DATE - INTERVAL '1 month';
 SELECT CURRENT_DATE - INTERVAL '2 year 4 month';
+
+
+SELECT age(CURRENT_DATE, '2002-02-01')
+
+SELECT * , age(CURRENT_DATE, dob) FROM students; 
