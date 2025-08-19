@@ -17,3 +17,7 @@ SELECT now();
 SELECT CURRENT_DATE;
 SELECT now()::date;
 SELECT now()::time;
+
+
+SELECT to_char(now(), 'dd/mm/yyyy');
+SELECT to_char(now(), 'DDD');
