@@ -8,8 +8,8 @@ CREATE TABLE post(
     title TEXT NOT NULL,
     -- user_id INTEGER REFERENCES "user"(id) 
     -- user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
-    user_id INTEGER REFERENCES "user"(id) ON DELETE SET NULL
-    -- user_id INTEGER REFERENCES "user"(id) 
+    -- user_id INTEGER REFERENCES "user"(id) ON DELETE SET NULL -- if set NOT NULL it's does not work 
+    user_id INTEGER REFERENCES "user"(id) ON DELETE set DEFAULT DEFAULT 2
     -- user_id INTEGER REFERENCES "user"(id) 
 )
 
