@@ -30,3 +30,6 @@ SELECT CURRENT_DATE - INTERVAL '2 year 4 month';
 SELECT age(CURRENT_DATE, '2002-02-01')
 
 SELECT * , age(CURRENT_DATE, dob) FROM students; 
+
+
+SELECT extract(year from '2020-01-25'::date);
