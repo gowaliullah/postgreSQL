@@ -205,5 +205,16 @@ SELECT * from students
         WHERE age BETWEEN 19 AND 22;
 
  SELECT * from students
-        WHERE dob BETWEEN '2006-06-01' AND '2006-11-01';
+        WHERE dob BETWEEN '2006-06-01' AND '2006-11-01' ORDER BY dob;
 
+-- LIKE is case sencetice
+SELECT * FROM students
+    -- WHERE first_name LIKE '%m';
+    -- WHERE first_name LIKE '%m%';
+    WHERE first_name LIKE '__a%';
+
+
+
+
+SELECT * FROM students
+    WHERE first_name ILIKE 'e%';
