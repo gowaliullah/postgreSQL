@@ -13,6 +13,10 @@ CREATE TABLE post(
     -- user_id INTEGER REFERENCES "user"(id) 
 )
 
+INSERT INTO "user"(username) VALUES
+    ('Nai'),
+    ('Kno');
+
 
 INSERT INTO "user"(username) VALUES
     ('Akash'),
@@ -20,6 +24,7 @@ INSERT INTO "user"(username) VALUES
     ('PAni'),
     ('Nodi'),
     ('Bdidge'),
+    ('SEI TMI'),
     ('Rasta');
 
     INSERT INTO "post"(title, user_id) VALUES
@@ -68,4 +73,8 @@ SELECT * FROM post p
 
     -- right join
 SELECT * FROM post p
-    RIGHT JOIN "user" u ON p.user_id = u.id
+    RIGHT OUTER JOIN "user" u ON p.user_id = u.id
+
+        -- full join
+SELECT * FROM post p
+    FULL JOIN "user" u ON p.user_id = u.id
