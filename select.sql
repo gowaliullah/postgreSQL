@@ -234,3 +234,12 @@ SELECT * FROM students LIMIT 5 OFFSET 5 * 4;
 -- delete --> uporer sob condition apply kora jabe delete ar upo
 DELETE * FROM students;
 DELETE FROM students WHERE grade = 'B';
+
+
+-- update
+UPDATE students
+    set email = 'habiba@gmail.com'
+    WHERE student_id = 44;
+
+
+SELECT * FROM students;
