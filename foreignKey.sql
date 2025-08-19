@@ -9,3 +9,27 @@ CREATE TABLE post(
     user_id INTEGER REFERENCES "user"(id)
 )
 
+
+INSERT INTO "user"(username) VALUES
+    ('Akash'),
+    ('Batas'),
+    ('PAni'),
+    ('Nodi'),
+    ('Bdidge'),
+    ('Rasta');
+
+    INSERT INTO "post"(title, user_id) VALUES
+    ('Akash', 1),
+    ('Batas', 2),
+    ('PAni', 3),
+    ('Nodi', 4),
+    ('Bdidge', 5),
+    ('Rasta', 6);
+
+SELECT * FROM post;
+SELECT * FROM "user";
+
+
+-- Restriction behabiour
+DELETE FROM "user"
+    WHERE id = 1;
