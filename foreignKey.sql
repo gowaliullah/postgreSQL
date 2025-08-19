@@ -6,7 +6,11 @@ CREATE TABLE "user"(
 CREATE TABLE post(
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
-    user_id INTEGER REFERENCES "user"(id)
+    -- user_id INTEGER REFERENCES "user"(id) 
+    user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
+    -- user_id INTEGER REFERENCES "user"(id) 
+    -- user_id INTEGER REFERENCES "user"(id) 
+    -- user_id INTEGER REFERENCES "user"(id) 
 )
 
 
@@ -25,6 +29,10 @@ INSERT INTO "user"(username) VALUES
     ('Nodi', 4),
     ('Bdidge', 5),
     ('Rasta', 6);
+
+DROP TABLE post;
+DROP TABLE "user";
+
 
 SELECT * FROM post;
 SELECT * FROM "user";
