@@ -238,7 +238,7 @@ DELETE FROM students WHERE grade = 'B';
 
 -- update
 UPDATE students
-    set email = 'habiba@gmail.com'
+    set email = 'habiba@gmail.com', age = 19
     WHERE student_id = 44;
 
 
