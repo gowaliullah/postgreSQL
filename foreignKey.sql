@@ -41,3 +41,8 @@ SELECT * FROM "user";
 -- Restriction behabiour
 DELETE FROM "user"
     WHERE id = 1;
+
+
+-- join with 2 tables
+SELECT title, username FROM post
+    JOIN "user" ON post.user_id = "user".id
