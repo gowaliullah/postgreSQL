@@ -14,4 +14,9 @@ CREATE TABLE departments (
 
 
 SELECT * FROM employees
-    JOIN departments ON employees.department_id = departments.department_id ;   
+    JOIN departments ON employees.department_id = departments.department_id ;  
+
+
+
+SELECT * FROM employees
+    JOIN departments USING(department_id);   
