@@ -10,3 +10,8 @@ CREATE TABLE departments (
     department_id SERIAL PRIMARY KEY,
     department_name VARCHAR(50)
 )
+
+
+
+SELECT * FROM employees
+    JOIN departments ON employees.department_id = departments.department_id ;   
