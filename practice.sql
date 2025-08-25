@@ -20,3 +20,13 @@ SELECT * FROM employees
 
 SELECT * FROM employees
     JOIN departments USING(department_id);   
+
+
+SELECT department_name, avg(salary) FROM employees
+    JOIN departments USING(department_id)
+    GROUP BY department_name;
+
+
+SELECT department_name, round(avg(salary)) as avg_salary FROM employees
+    JOIN departments USING(department_id)
+    GROUP BY department_name;
