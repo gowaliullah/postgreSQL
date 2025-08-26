@@ -35,3 +35,12 @@ SELECT department_name, round(avg(salary)) as avg_salary FROM employees
 SELECT department_name, count(*) FROM employees
     JOIN departments USING(department_id)
     GROUP BY department_name;
+
+
+
+SELECT department_name, round(avg(salary)) as avg_salary FROM employees
+    JOIN departments USING(department_id)
+    GROUP BY department_name
+    ORDER BY avg_salary DESC
+    LIMIT 1
+    ;
