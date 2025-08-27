@@ -56,3 +56,18 @@ SELECT max(salary) FROM employees
 SELECT * FROM employees 
     WHERE salary > (SELECT max(salary) FROM employees 
         WHERE department_name = 'HR');
+
+        -- jara 1 ta data retunr kore tader bole scalar sub query
+
+        -- can return single value
+        SELECT max(salary) FROM employees 
+            WHERE department_name = 'HR';
+
+        -- can return multiple rows and columns
+        SELECT * FROM employees
+            WHERE department_name = 'HR';
+
+
+        -- can return single column 
+        SELECT salary FROM employees 
+            WHERE department_name = 'HR';
