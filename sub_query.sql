@@ -49,5 +49,10 @@ INSERT INTO employees (employee_id, employee_name, department_name, salary, hire
 SELECT * FROM employees
     WHERE department_name = 'HR';
 
-SELECT max(salary) FROM employees
+SELECT max(salary) FROM employees 
     WHERE department_name = 'HR';
+
+-- main query
+SELECT * FROM employees 
+    WHERE salary > (SELECT max(salary) FROM employees 
+        WHERE department_name = 'HR');
