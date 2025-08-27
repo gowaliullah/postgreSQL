@@ -48,3 +48,6 @@ INSERT INTO employees (employee_id, employee_name, department_name, salary, hire
 -- retrieve all employees whose salary greter than the height salary of the HR department
 SELECT * FROM employees
     WHERE department_name = 'HR';
+
+SELECT max(salary) FROM employees
+    WHERE department_name = 'HR';
