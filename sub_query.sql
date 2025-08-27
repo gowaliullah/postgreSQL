@@ -1,48 +1,50 @@
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     employee_name VARCHAR(50),
-    department_id INT REFERENCES departments(department_id),
+    department_name VARCHAR(50),
     salary DECIMAL(10, 2),
     hire_date DATE
 )
 
+drop table if exists employees;
 
 
-INSERT INTO employees (employee_name, department_id, salary, hire_date) VALUES
-('John Smith', 1, 60000.00, '2020-03-15'),
-('Emma Johnson', 2, 85000.00, '2019-07-22'),
-('Michael Chen', 3, 72000.00, '2021-01-10'),
-('Sarah Davis', 4, 68000.00, '2022-06-05'),
-('James Wilson', 5, 75000.00, '2018-11-30'),
-('Emily Brown', 6, 82000.00, '2020-09-12'),
-('David Martinez', 7, 65000.00, '2023-02-18'),
-('Lisa Taylor', 1, 58000.00, '2021-04-25'),
-('Robert Anderson', 2, 90000.00, '2017-08-14'),
-('Jennifer Lee', 3, 70000.00, '2022-03-09'),
-('Thomas White', 4, 71000.00, '2020-12-01'),
-('Amanda Garcia', 5, 78000.00, '2019-05-20'),
-('Steven Clark', 6, 87000.00, '2021-07-17'),
-('Megan Harris', 7, 62000.00, '2023-01-08'),
-('Daniel Lewis', 1, 59000.00, '2022-10-03'),
-('Laura Walker', 2, 92000.00, '2018-02-27'),
-('Christopher Hall', 3, 74000.00, '2021-11-15'),
-('Ashley Young', 4, 69000.00, '2020-04-12'),
-('Matthew King', 5, 77000.00, '2019-09-30'),
-('Samantha Wright', 6, 83000.00, '2022-08-22'),
-('Andrew Scott', 7, 64000.00, '2023-03-19'),
-('Rachel Green', 1, 61000.00, '2021-06-07'),
-('Mark Turner', 2, 88000.00, '2017-12-05'),
-('Kelly Adams', 3, 73000.00, '2022-02-14'),
-('Brian Nelson', 4, 70000.00, '2020-10-25'),
-('Nicole Carter', 5, 79000.00, '2019-03-11'),
-('Jason Mitchell', 6, 86000.00, '2021-05-29'),
-('Heather Perez', 7, 63000.00, '2023-04-02'),
-('Patrick Roberts', 1, 57000.00, '2022-09-16'),
-('Michelle Turner', 2, 91000.00, '2018-06-08'),
-('Gregory Phillips', 3, 71000.00, '2021-12-20'),
-('Stephanie Campbell', 4, 72000.00, '2020-07-03'),
-('Edward Parker', 5, 76000.00, '2019-10-15'),
-('Christina Evans', 6, 84000.00, '2022-01-27'),
-('Jonathan Morris', 7, 66000.00, '2023-05-10');
+INSERT INTO employees (employee_id, employee_name, department_name, salary, hire_date) VALUES
+(1, 'Emily Carter', 'Sales', 65000.00, '2022-03-01'),
+(2, 'Michael Chen', 'Engineering', 92000.00, '2019-07-15'),
+(3, 'Sarah Adams', 'Marketing', 78500.00, '2021-05-20'),
+(4, 'David Rodriguez', 'Sales', 71000.00, '2020-09-10'),
+(5, 'Jessica Lee', 'HR', 55000.00, '2023-01-25'),
+(6, 'Daniel Brown', 'Engineering', 110000.00, '2018-11-04'),
+(7, 'Laura Wilson', 'Finance', 89000.00, '2020-04-18'),
+(8, 'James Martin', 'IT', 95000.00, '2017-06-30'),
+(9, 'Olivia Jones', 'Marketing', 82000.00, '2022-08-08'),
+(10, 'William Davis', 'Sales', 68000.00, '2021-11-12'),
+(11, 'Sophia Garcia', 'IT', 105000.00, '2016-02-29'),
+(12, 'Robert Taylor', 'HR', 60000.00, '2022-10-01'),
+(13, 'Ava White', 'Finance', 94000.00, '2019-03-05'),
+(14, 'Joseph Miller', 'Engineering', 88000.00, '2020-05-09'),
+(15, 'Chloe Moore', 'Marketing', 76000.00, '2021-09-22'),
+(16, 'Benjamin Hall', 'Sales', 73000.00, '2020-01-14'),
+(17, 'Isabella Clark', 'HR', 58000.00, '2023-04-17'),
+(18, 'Mason Lewis', 'IT', 98000.00, '2018-08-28'),
+(19, 'Mia Harris', 'Engineering', 115000.00, '2017-12-03'),
+(20, 'Noah King', 'Finance', 97000.00, '2018-05-11'),
+(21, 'Evelyn Baker', 'Marketing', 84000.00, '2022-01-30'),
+(22, 'Liam Allen', 'Sales', 69500.00, '2021-06-05'),
+(23, 'Charlotte Nelson', 'IT', 102000.00, '2019-09-20'),
+(24, 'Alexander Wright', 'HR', 62000.00, '2022-06-11'),
+(25, 'Amelia Green', 'Finance', 91000.00, '2021-02-14'),
+(26, 'Henry Scott', 'Engineering', 108000.00, '2019-10-25'),
+(27, 'Harper Adams', 'IT', 112000.00, '2016-07-07'),
+(28, 'Ethan Lopez', 'Sales', 75000.00, '2020-12-08'),
+(29, 'Avery Hill', 'Marketing', 80000.00, '2022-03-19'),
+(30, 'Leo Walker', 'HR', 59000.00, '2023-02-28'),
+(31, 'Zoe Young', 'Finance', 93000.00, '2020-10-03'),
+(32, 'Sebastian Rodriguez', 'Engineering', 100000.00, '2021-08-16');
 
 
+
+-- retrieve all employees whose salary greter than the height salary of the HR department
+SELECT * FROM employees
+    WHERE department_name = 'HR';
