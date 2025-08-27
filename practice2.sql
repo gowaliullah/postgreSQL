@@ -21,3 +21,9 @@ INSERT INTO orders (order_id, customer_id, order_date, total_amount) VALUES
 (10, 107, '2023-01-25', 18.75),
 (11, 108, '2023-01-26', 99.99),
 (12, 109, '2023-01-27', 175.50);
+
+
+
+SELECT customer_id, COUNT(order_id), sum(total_amount) as total_spent FROM orders
+    GROUP BY customer_id
+    HAVING COUNT(*) > 1;
