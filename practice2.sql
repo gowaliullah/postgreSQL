@@ -33,3 +33,5 @@ SELECT customer_id, COUNT(order_id), sum(total_amount) as total_spent FROM order
 SELECT extract(month from order_date) as month, sum(total_amount) FROM orders
     WHERE extract(year from order_date) = 2024
     GROUP BY month;
+SELECT extract(month from order_date) as month, sum(total_amount) FROM orders
+    GROUP BY month;
